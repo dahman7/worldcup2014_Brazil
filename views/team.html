@@ -1,0 +1,17 @@
+<div class="container-results">
+	<table class="team-table"  cellspacing="0" >
+		<tr>
+			<td></td>
+			<td>Home team</td>
+			<td>Away team</td>
+			<td></td>
+		</tr>
+		<tr ng-repeat ="match in matchs">
+			<td>{{match.home_team.goals}}</td>
+			<td >{{match.home_team.country}}</td>
+			<td>{{match.away_team.country}}</td>
+			<td>{{match.away_team.goals}}</td>
+		</tr>
+	</table>
+</div>
+

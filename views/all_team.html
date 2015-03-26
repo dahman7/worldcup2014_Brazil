@@ -1,0 +1,15 @@
+<div class="container-results">
+	<table class="team-table"  cellspacing="0" >
+		<tr>
+			<td>Country</td>
+			<td>fifa code</td>
+			<td>group</td>
+		</tr>
+		<tr ng-repeat ="team in teams">
+			<td><a href="#team/{{team.fifa_code}}">{{team.country}}</a></td>
+			<td >{{team.fifa_code}}</td>
+			<td>{{team.group_id}}</td>
+		</tr>
+	</table>
+</div>
+

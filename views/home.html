@@ -1,0 +1,21 @@
+	<div class="container-team" ng-repeat ="group in groups">
+		<h2>Group {{group.letter}}</h2>
+		<table class="team-table" cellspacing="0">
+			<tr>
+				<td>name</td>
+				<td>code</td>
+				<td>points</td>
+				<td>goal diff</td>
+				<td></td>
+			</tr>
+			<tr ng-repeat ="allteam in group.teams">
+				<td>{{allteam.team.country}}</td>
+				<td>{{allteam.team.fifa_code}}</td>
+				<td>{{allteam.team.points}}</td>
+				<td>{{allteam.team.goal_differential}}</td>
+				<td class="btn" ><a href="#team/{{allteam.team.fifa_code}}">More details</a></td>
+			</tr>
+		</table>
+		<div class="team-statistic" google-chart chart="chartObject" group="{{group.letter}}"></div>
+	</div>
+
